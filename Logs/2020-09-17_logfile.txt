@@ -9,3 +9,5 @@
 2020-09-17 14:57:48.3184 INFO Returned owner with id: 1e700b79-fcf5-4c11-98e6-a772a9b00d47
 2020-09-17 15:17:09.2593 INFO Returned owner with details for id: f98e4d74-0f68-4aac-89fd-047f1aaca6b6
 2020-09-17 15:17:55.2786 INFO Returned owner with details for id: 261e1685-cf26-494c-b17c-3546e65f5620
+2020-09-17 16:10:47.5727 INFO Returned owner with id: 261e1685-cf26-494c-b17c-3546e65f5620
+2020-09-17 16:11:42.2095 INFO Returned owner with details for id: 261e1685-cf26-494c-b17c-3546e65f5620

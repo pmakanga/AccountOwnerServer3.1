@@ -15,6 +15,10 @@ namespace AccountOwnerServerThreeDotOne
             CreateMap<Owner, OwnerDto>();
 
             CreateMap<Account, AccountDto>();
+
+            CreateMap<OwnerForCreationDto, Owner>();
+
+            CreateMap<OwnerForUpdateDto, Owner>();
         }
     }
 }
