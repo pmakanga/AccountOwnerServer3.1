@@ -3,6 +3,7 @@ using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -172,11 +173,11 @@ namespace AccountOwnerServerThreeDotOne.Controllers
                     return NotFound();
                 }
 
-                if (_repository.Account.AccountsByOwner(id).Any())
-                {
-                    _logger.LogError($"Cannot delete owner with id: {id}. It has related accounts. Delete those accounts first");
-                    return BadRequest("Cannot delete owner. It has related accounts. Delete those accounts first");
-                }
+                //if (_repository.Account.AccountsByOwner(id).Any())
+                //{
+                //    _logger.LogError($"Cannot delete owner with id: {id}. It has related accounts. Delete those accounts first");
+                //    return BadRequest("Cannot delete owner. It has related accounts. Delete those accounts first");
+                //}
 
                 _repository.Owner.DeleteOwner(owner);
                 await _repository.SaveAsync();

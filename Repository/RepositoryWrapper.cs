@@ -44,7 +44,16 @@ namespace Repository
 
         public async Task SaveAsync()
         {
-            await _repoContext.SaveChangesAsync();
+           
+            try
+            {
+                await _repoContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }
